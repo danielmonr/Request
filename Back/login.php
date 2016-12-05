@@ -15,19 +15,19 @@
    if($result = $dbc->query($sql_admin)){
     $user = $result->fetch_assoc();
 	$_SESSION['login_user'] = $user["id"];
-	$_SESSION['user_type'] = 1;
+	//$_SESSION['user_type'] = 1;
     echo 1;
    }
    elseif($result = $dbc->query($sql_cliente)){
    	$user = $result->fetch_assoc();
 	$_SESSION['login_user'] = $user["id"];
-	$_SESSION['user_type'] = 2;
+	//$_SESSION['user_type'] = 2;
     echo 1;
    }
    elseif($result = $dbc->query($sql_empresa)){
    	$user = $result->fetch_assoc();
 	$_SESSION['login_user'] = $user["id"];
-	$_SESSION['user_type'] = 3;
+	//$_SESSION['user_type'] = 3;
    	echo 1;
    }
    else{
