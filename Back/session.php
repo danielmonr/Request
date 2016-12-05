@@ -5,7 +5,7 @@
     session_start();
     //print("Se está corriendo<br/>");
     if(!isset($_SESSION['login_user'])){
-        header("location: http://ubiquitous.csf.itesm.mx/~daw-1021514/content/Request/Front/login.html");
+        header("location: http://ubiquitous.csf.itesm.mx/~daw-1021514/content/Request/FRONT/login.html");
     }
     $user_id = $_SESSION['login_user'];
     $sql = mysqli_query($dbc,"SELECT nombre from exf_Clientes WHERE id = '$user_id' ");
