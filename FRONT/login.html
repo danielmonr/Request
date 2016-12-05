@@ -41,7 +41,7 @@
         //alert("Data" + jsonf);
         console.log( $( this ).serializeArray() );
         event.preventDefault();
-        $.post("http://ubiquitous.csf.itesm.mx/~daw-1021514/content/Request/BACK/login.php", { 'data': jsonf }, function(data){
+        $.post("http://ubiquitous.csf.itesm.mx/~daw-1021514/content/Request/Back/login.php", { 'data': jsonf }, function(data){
             if(data)
               window.location.href = "http://ubiquitous.csf.itesm.mx/~daw-1021514/content/Request/Front/getCuentas.html";
 				
