@@ -4,7 +4,7 @@
    $db = new DBConnection();
    echo "hola";
    $dbc = $db->Connect();
-   $sql = "select * from cuenta where id_usuario=" . $_SESSION['login_user'];
+   $sql = "select * from cuenta where id_usuario=" . "1";
    if ($result = $dbc->query($sql)){
 	   // output data of each row
 	   $json = '{"items":[';
