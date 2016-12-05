@@ -2,7 +2,6 @@
    include_once("DBConnection.php");
    //include_once("session.php");
    $db = new DBConnection();
-   echo "hola";
    $dbc = $db->Connect();
    $sql = "select * from cuenta where id_usuario=" . "1";
    if ($result = $dbc->query($sql)){
