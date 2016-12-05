@@ -1,6 +1,6 @@
 <?php
    include_once("DBConnection.php");
-   include_once("session.php");
+   //include_once("session.php");
    $db = new DBConnection();
    echo "hola";
    $dbc = $db->Connect();
