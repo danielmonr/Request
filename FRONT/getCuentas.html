@@ -37,7 +37,7 @@
           </ul>
           <script>
           $.get("http://ubiquitous.csf.itesm.mx/~daw-1021514/content/Request/Back/getCuentas.php", function(data){
-            var arreglo = $.parseJSON(data);
+            var arreglo = ($.parseJSON(data)).items;
             console.log(arreglo);
             var l = document.getElementById("");
             for(var i = 0;i<arreglo.length;i++){
