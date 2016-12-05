@@ -18,13 +18,13 @@
 	$_SESSION['user_type'] = 1;
     echo 1;
    }
-   elseif($result = $dbc->query($sql_cliente){
+   elseif($result = $dbc->query($sql_cliente)){
    	$user = $result->fetch_assoc();
 	$_SESSION['login_user'] = $user["id"];
 	$_SESSION['user_type'] = 2;
     echo 1;
    }
-   elseif($result = $dbc->query($sql_empresa){
+   elseif($result = $dbc->query($sql_empresa)){
    	$user = $result->fetch_assoc();
 	$_SESSION['login_user'] = $user["id"];
 	$_SESSION['user_type'] = 3;
