@@ -8,8 +8,14 @@
    if ($result = $dbc->query($sql)){
 	   // output data of each row
 	   $json = '{"items":[';
+	   $boo = 0;
 	   while($r = $result->fetch_assoc()){
+		   if($boo){
+			   $json = $json . ',';
+		   }
 		   $json = $json . json_encode($r);
+		   $boo = 0;
+
 	   }
 
 	   $json = $json . ']}';
