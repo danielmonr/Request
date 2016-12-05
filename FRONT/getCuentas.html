@@ -41,7 +41,7 @@
             console.log(arreglo);
             var l = document.getElementById("");
             for(var i = 0;i<arreglo.length;i++){
-              l.innerHTML = l.innerHTML + "<li><h2>"+arreglo[i].destino +" el " + arreglo[i].partida +"</h2><a href='http://ubiquitous.csf.itesm.mx/~daw-1021514/content/DAW_EXF/Front/Travels/view.html?id="+arreglo[i].id + "'>Detalles</a></li>";
+              l.innerHTML = l.innerHTML + "<li><h2>"+arreglo[i].descripcion +" del usuario:  " + arreglo[i].id_usuario +"</h2>Saldo: "+arreglo[i].saldo + "</li>";
             }
           });
           </script>
