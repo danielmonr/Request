@@ -14,7 +14,7 @@
 			   $json = $json . ',';
 		   }
 		   $json = $json . json_encode($r);
-		   $boo = 0;
+		   $boo = 1;
 
 	   }
 
